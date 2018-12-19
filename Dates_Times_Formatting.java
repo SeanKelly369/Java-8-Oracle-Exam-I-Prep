@@ -23,8 +23,8 @@ public class Dates_Times_Formatting {
                 DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
         System.out.println(shortDateTime.format(dateTime)); // 1/20/20
         System.out.println(shortDateTime.format(date)); // 1/20/20
-        System.out.println(
-                shortDateTime.format(time)); // UnsupportedTemporalTypeException
+//        System.out.println(
+//                shortDateTime.format(time)); // UnsupportedTemporalTypeException
 
 //        DateTimeFormatter shortDateTime2 =
 //                DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
@@ -38,5 +38,15 @@ public class Dates_Times_Formatting {
                 DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);
         System.out.println(shortF.format(dateTime));
         System.out.println(mediumF.format(dateTime));
+
+        DateTimeFormatter f = DateTimeFormatter.ofPattern(("MMMM dd, yyyy, " +
+                "hh:mm"));
+        System.out.println(dateTime.format(f));
+        // 085 168 1138
+        LocalDateTime dateTime2 = LocalDateTime.now();
+        System.out.println(dateTime2);
+        DateTimeFormatter dateTime2Formatted =
+                DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+        System.out.println(dateTime2.format(dateTime2Formatted));
     }
 }
