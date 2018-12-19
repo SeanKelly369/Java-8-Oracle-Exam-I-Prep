@@ -10,5 +10,7 @@ public class Q6_Lion {
         StringBuilder roar2 = new StringBuilder("roar");
         new Q6_Lion().roar(roar1, roar2);
         System.out.println(roar1 + " " + roar2);
+        int length = roar1.length();
+        System.out.println(length);
     }
 }
