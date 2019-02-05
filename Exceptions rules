@@ -1,0 +1,11 @@
+Checked Exception
+
+- must be handled or declared
+- if extends Exception is used it means it is a checked exception
+- if Interface is used, it must be declared in the interface in order to compile
+
+
+Unchecked Exception
+
+- extends RuntimeException makes the exception an unchecked exception
+- handle or declare not required
