@@ -9,3 +9,4 @@ Unchecked Exception
 
 - extends RuntimeException makes the exception an unchecked exception
 - handle or declare not required
+- child must be handled before parent in order to compile
