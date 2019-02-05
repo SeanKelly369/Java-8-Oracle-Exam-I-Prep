@@ -1,0 +1,24 @@
+Date and Times classes
+
+- immutable
+
+- Methods below are from java.util.Date;
+- LocalDate.now() // local date
+- LocalTime.now() // local time
+- LocalDateTime.now() // local date and time
+
+- LocalDate localDate = LocalDate.of(year: 2000, Month.JANUARY, dayOfMonth: 1);  // month is enum
+- LocalTime localTime = LocalTime.of(hour: 12, minute: 30);
+
+- of methods are overloaded
+
+- eg LocalDateTime.of(localDate, localTime);
+
+- classdate and Calendar were all that existed before Java 8
+- new Date(); // from Package.util;
+
+- // Example code for before Java 8 date and time code
+Calendar calendar = Calendar.getInstance();
+calendar.set(year:2015, Calendar.JANUARY, date:1);
+Date january = calendar.getTime();
+Syste
