@@ -1,6 +1,6 @@
 Date and Times classes
 
-- immutable
+- immutable // requires reassignment like strings
 
 - Methods below are from java.util.Date;
 - LocalDate.now() // local date
